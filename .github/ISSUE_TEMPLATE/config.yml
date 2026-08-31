@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Nirmitee-tech/.github/blob/main/SECURITY.md
+    about: Please do not file security issues publicly — follow our security policy.
+  - name: Commercial support and integration work
+    url: https://nirmitee.io/contact
+    about: Talk to Nirmitee.io about healthcare interoperability, Mirth Connect, FHIR or EDI engagements.
