@@ -4,7 +4,7 @@
 
 Our team works day to day in HL7 v2, FHIR R4, X12 EDI, SMART on FHIR, Mirth Connect and ABDM. The repositories below are the parts of that work we've been able to open-source — reference implementations, test harnesses and integration recipes taken from production deployments.
 
-[nirmitee.io](https://nirmitee.io) · [Blog](https://nirmitee.io/blog) · [Contact us](https://nirmitee.io/contact)
+[nirmitee.io](https://nirmitee.io) · [Blog](https://nirmitee.io/blog) · [Contact us](https://nirmitee.io/get-in-touch)
 
 ---
 
@@ -14,6 +14,8 @@ Our team works day to day in HL7 v2, FHIR R4, X12 EDI, SMART on FHIR, Mirth Conn
 |---|---|
 | [**fhir-prior-auth-engine**](https://github.com/Nirmitee-tech/fhir-prior-auth-engine) | FHIR-native prior-authorization workflow engine — a reference implementation of orchestration, async holds, human-in-the-loop review and event sourcing for CMS-0057 / Da Vinci (CRD · DTR · PAS). Kotlin + Spring Boot. |
 | [**clearinghouse-simulator**](https://github.com/Nirmitee-tech/clearinghouse-simulator) | A drop-in stand-in for a real clearinghouse SFTP/EDI integration. 120 scenarios across 270/271, 278, 837, TA1/999, 277CA, 835 and 276/277, validated against a production corpus. |
+| [**x12-fhir-mapper**](https://github.com/Nirmitee-tech/x12-fhir-mapper) | Maps X12 837/835 to FHIR R4 (Claim / ClaimResponse) through an anti-corruption layer: adapters → a neutral canonical model → FHIR. TypeScript, with a paste-and-map playground. |
+| [**edi-idempotent-processor**](https://github.com/Nirmitee-tech/edi-idempotent-processor) | Idempotent healthcare EDI processing — make at-least-once delivery safe with the inbox + outbox pattern: dedup by ISA13, effectively-once processing, exactly-once effects. TypeScript. |
 | [**openmirth-console**](https://github.com/Nirmitee-tech/openmirth-console) | Open-source operations layer for Mirth Connect and OIE — modern web admin, clinical observability and channel CI/CD. |
 | [**mirth-connect-cookbook**](https://github.com/Nirmitee-tech/mirth-connect-cookbook) | Production-grade Mirth Connect recipes, transformers, channels and scripts — tested in real deployments. |
 
@@ -22,7 +24,14 @@ Our team works day to day in HL7 v2, FHIR R4, X12 EDI, SMART on FHIR, Mirth Conn
 | Project | What it is |
 |---|---|
 | [**headless-ehr-fhir**](https://github.com/Nirmitee-tech/headless-ehr-fhir) | A headless EHR platform built on FHIR R4 — multi-tenant, HIPAA-ready, with ABAC authorization, SMART on FHIR, field-level encryption and bulk `$export`. Go. |
+| [**EHRConnect**](https://github.com/Nirmitee-tech/EHRConnect) | Open-source EHR platform built on FHIR R4 — multi-tenant clinical workflows, specialty and country-specific configuration, theming and task management. TypeScript. |
 | [**nirmitee-rpm**](https://github.com/Nirmitee-tech/nirmitee-rpm) | Open-source Remote Patient Monitoring platform — multi-tenant workspaces, RBAC, care plans and vitals monitoring. |
+
+## Security & compliance
+
+| Project | What it is |
+|---|---|
+| [**hipaa-spring-boot-starter**](https://github.com/Nirmitee-tech/hipaa-spring-boot-starter) | HIPAA-by-default for Spring Boot — annotate `@Phi` and get field-level encryption, a tamper-evident audit trail and minimum-necessary access control. HIPAA §164.312 technical safeguards as inherited platform behaviour. Kotlin. |
 
 ## ABDM / India Digital Health
 
@@ -50,4 +59,4 @@ Our team works day to day in HL7 v2, FHIR R4, X12 EDI, SMART on FHIR, Mirth Conn
 - **EHR integration** — Epic, Cerner and SMART on FHIR app launch, certification and go-live support.
 - **Regulatory readiness** — CMS-0057, Da Vinci IGs, ONC (g)(10) and ABDM milestone certification.
 
-If you are building health software and hit an integration wall, [get in touch](https://nirmitee.io/contact).
+If you are building health software and hit an integration wall, [get in touch](https://nirmitee.io/get-in-touch).
